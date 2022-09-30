@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe 生成活动文件",
+			"command": "E:\\stawberry\\c\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-lwsock32",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "E:\\stawberry\\c\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "编译器: E:\\stawberry\\c\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe 生成活动文件",
+			"command": "E:\\stawberry\\c\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-lwsock32",
+				"-fexec-charset=GB2312"
+			],
+			"options": {
+				"cwd": "E:\\stawberry\\c\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: E:\\stawberry\\c\\bin\\g++.exe"
+		}
+	]
+}
